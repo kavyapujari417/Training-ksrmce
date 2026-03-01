@@ -1,0 +1,214 @@
+1) frequency of each number
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int[] freq = new int[N + 1];
+
+        for (int i = 0; i < N; i++) {
+            int num = sc.nextInt();
+            freq[num]++;
+        }
+
+        for (int i = 1; i <= N; i++) {
+            System.out.println(i + ": " + freq[i]);
+        }
+
+        sc.close();
+    }
+}
+3)find maximum element
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int max = sc.nextInt();  // first element
+
+        for (int i = 1; i < N; i++) {
+            int num = sc.nextInt();
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        System.out.println(max);
+
+        sc.close();
+    }
+}
+4)sum of odd elements
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int sum = 0;
+
+        for (int i = 0; i < N; i++) {
+            int num = sc.nextInt();
+            if (num % 2 != 0) {
+                sum += num;
+            }
+        }
+
+        System.out.println(sum);
+
+        sc.close();
+    }
+}
+5) find duplicate element
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < N; i++) {
+            for (int j = i + 1; j < N; j++) {
+                if (arr[i] == arr[j]) {
+                    System.out.println(arr[i]);
+                    sc.close();
+                    return;
+                }
+            }
+        }
+
+        sc.close();
+    }
+}
+2)encapsulation problem
+import java.util.*;
+
+class BankAccount {
+    private String accountNumber;
+    private int balance;
+    BankAccount(String accountNumber, int balance) {
+        this.accountNumber = accountNumber;
+        setBalance(balance);  // validation
+    }
+
+    public void setBalance(int balance) {
+        if (balance >= 0) {
+            this.balance = balance;
+        } else {
+            this.balance = 0;
+        }
+    }
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String accountNumber = sc.next();
+        int balance = sc.nextInt();
+
+        BankAccount account = new BankAccount(accountNumber, balance);
+
+        System.out.println("Account Number: " + account.getAccountNumber() +
+                           "  Balance: " + account.getBalance());
+
+        sc.close();
+    }
+}
+4) inheritance problem
+class Animal {
+    void make_sound() {
+        System.out.println("Some sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void make_sound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.make_sound();
+    }
+}
+
+2) count discount number
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < N; i++) {
+            int num = sc.nextInt();
+            set.add(num);
+        }
+
+        System.out.println(set.size());
+
+        sc.close();
+    }
+}
+
+
+oops
+1)class and object
+import java.util.*;
+
+class Car {
+    String brand;
+    String model;
+    int year;
+
+    // Constructor
+    Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+    void display() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String brand = sc.next();
+        String model = sc.next();
+        int year = sc.nextInt();
+
+        Car car = new Car(brand, model, year);
+        car.display();
+
+        sc.close();
+    }
+}

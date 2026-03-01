@@ -1,1 +1,867 @@
+#problem 1 in arrays
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int[] a=new int[n];
+        for(int k=0;k<n;k++){
+            a[k]=s.nextInt();
+        }
+        for(int j=0;j<n;j++){
+            System.out.print(a[j]+" ");
+        }
+    
+    }
+}
+
+	
+problem c:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=s.nextInt();
+        }
+        int x=s.nextInt();
+        boolean found=false;
+        for(int j=0;j<n;j++){
+            if(arr[j]==x){
+                found=true;
+                break;
+            }
+        }
+        if(found){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
+
+problem D:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int [] a=new int[n];
+        for(int i=0;i<n;i++)
+            a[i]=s.nextInt();
+        int index=0;
+        for(int i=1;i<n;i++)
+            if(a[i]>a[index]){
+                index=i;
+            }
+        System.out.println(index);
+    }
+}
+   
+
+problem E:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long[] a = new long[n];
+
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextLong();
+        }
+        long min = a[0];
+        int index = 0;
+        for (int i = 1; i < n; i++) {
+            if (a[i] < min) {
+                min = a[i];
+                index = i;
+            }
+        }
+        System.out.println(index);
+    }
+}
+
+problem F:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        int left = 0;
+        int right = n - 1;
+        boolean palindrome = true;
+        while (left < right) {
+            if (a[left] != a[right]) {
+                palindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        if (palindrome)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+}
+program G:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        int count=0;
+        for(int i=1;i<n-1;i++){
+            if(a[i]>a[i-1] && a[i]>a[i+1]){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+
+
+strings program A:
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        for(int i=s.length()-1;i>=0;i--){
+            System.out.print(s.charAt(i));
+        }
+        
+    }
+}
+øutput:
+sulochana
+anahcolus
+program 2:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        for(int i=1;i<s.length();i=i+2){
+            System.out.print(s.charAt(i));
+        }
+        for(int i=0;i<s.length();i=i+2){
+            System.out.print(s.charAt(i));
+        }
+    }
+}
+output:
+sulochana
+uohnslcaa
+program C:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        char ch=sc.next().charAt(0);
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==ch){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+output:
+sulochana
+a
+2
+
+program D:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        boolean Vowels=true;
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(ch!='a'&&ch!='e'&&ch!='i'&&ch!='o'&&ch!='u'&&ch!='A' &&ch!='E' && ch!='I' && ch!='O' && ch!='U'){
+                Vowels=false;
+                break;
+            }
+        }
+        if(Vowels){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
+
+program E:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        boolean onlyDigits=true;
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(ch<='0' || ch>='9'){
+                onlyDigits=false;
+                break;
+            }
+        }
+        if(onlyDigits){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
+program F:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int vowels=0;
+        int consonants=0;
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U' ){
+                vowels++;
+            }else{
+            consonants++;
+            }
+        }
+        System.out.println(vowels + " " + consonants);
+    }
+}
+output:
+sulochana
+4 5
+program G:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        for(int i=0;i<s.length();i++){
+            char ch=s.charAt(i);
+            if(Character.isUpperCase(ch)){
+                System.out.print(Character.toLowerCase(ch));
+            }else if(Character.isLowerCase(ch)){
+                System.out.print(Character.toUpperCase(ch));
+            }else{
+                System.out.print(ch);
+            }
+            
+        }
+        
+    }
+}
+output:
+sulochana
+SULOCHANA
+program H:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=1;
+        for(int i=0;i<s.length();i++){
+            if(i<s.length()-1 && s.charAt(i)==s.charAt(i+1)){
+                count++;
+            }
+            else{
+                System.out.print(s.charAt(i)+""+count);
+                count=1;
+            }
+        }
+    }
+}
+output:
+sulochana
+s1u1l1o1c1h1a1n1a1
+
+assignment arrays:
+program 1:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int[] arr=new int[N];
+        int[] freq=new int[N+1];
+        for(int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<N;i++){
+            freq[arr[i]]++;
+        }
+        for(int i=1;i<=N;i++){
+            System.out.println(i+":"+freq[i]);
+        }
+    }
+}
+
+input:
+5
+1 3 2 1 4
+output:
+1: 2
+2: 1
+3: 1
+4: 1
+5: 0
+program 2:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        for(int i=0;i<n;i++){
+            boolean found=false;
+            for(int j=0;j<i;j++){
+                if(arr[i]==arr[j]){
+                    found=true;
+                    break;
+                }
+            }
+            if(found==false){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+program3:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int max=arr[0];
+        for(int i=1;i<n;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+input:
+5
+-2 -19 8 15 4
+output:
+15
+
+program 4:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+        for(int i=1;i<n;i++){
+            if(arr[i]%2!=0){
+                sum=sum+arr[i];
+            }
+        }
+        System.out.println(sum);
+    }
+}
+input:
+5
+6 9 8 4 3
+output:
+12
+
+program 5:
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]==arr[j]){
+                    System.out.println(arr[i]);
+                    return;
+                }
+            }
+        }
+    }
+}
+input:
+6
+5 4 10 9 21 10
+output:
+10
+
+OOPS:
+program 1:
+import java.util.*;
+class Car{
+    String brand;
+    String model;
+    int year;
+}
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        Car c=new Car();
+        c.brand=sc.next();
+        c.model=sc.next();
+        c.year=sc.nextInt();
+        System.out.println("Brand: "+c.brand);
+        System.out.println("Model: "+c.model);
+        System.out.println("Year: "+c.year);
+    }
+}
+input:
+Toyota Corolla 2022
+output:
+Brand: Toyota
+Model: Corolla
+Year: 2022
+
+program 3:
+class Animal{
+    void make_sound(){
+        System.out.println("Animal sound");
+    }
+}
+class Dog extends Animal{
+    void make_sound(){
+        System.out.println("Bark");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Dog d=new Dog();
+        d.make_sound();
+    }
+}
+output:
+Bark
+program 5:
+abstract class Vehicle{
+    abstract void start();
+}
+class Car extends Vehicle{
+    void start(){
+        System.out.println("Car is starting...");
+    }
+}
+class Bike extends Vehicle{
+    void start(){
+        System.out.println("Bike is starting...");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Vehicle c=new Car();
+        Vehicle b=new Bike();
+        c.start();
+        b.start();
+    }
+}
+output:
+Car is starting...
+Bike is starting...
+INTERFACEASSIGNMENT:
+interface RemoteControl {
+    void powerOn();
+    void powerOff();
+    void increaseVolume();
+    void decreaseVolume();
+}
+
+class TV implements RemoteControl {
+    public void powerOn() { 
+        System.out.println("TV is now ON."); }
+    public void powerOff() { 
+        System.out.println("TV is now OFF."); }
+    public void increaseVolume() { 
+        System.out.println("TV volume increased."); }
+    public void decreaseVolume() { 
+        System.out.println("TV volume decreased."); }
+}
+
+class AC implements RemoteControl {
+    public void powerOn() { 
+        System.out.println("AC is now ON."); }
+    public void powerOff() { 
+        System.out.println("AC is now OFF."); }
+    public void increaseVolume() { 
+        System.out.println("AC cooling increased."); }
+    public void decreaseVolume() { 
+        System.out.println("AC cooling decreased."); }
+}
+
+class Speaker implements RemoteControl {
+    public void powerOn() { 
+        System.out.println("Speaker is now ON."); }
+    public void powerOff() { 
+        System.out.println("Speaker is now OFF."); }
+    public void increaseVolume() { 
+        System.out.println("Speaker volume increased."); }
+    public void decreaseVolume() { 
+        System.out.println("Speaker volume decreased."); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        RemoteControl device;
+
+        System.out.println("=== TV Control ===");
+        device = new TV();
+        device.powerOn();
+        device.increaseVolume();
+        device.decreaseVolume();
+        device.powerOff();
+
+        System.out.println("\n=== AC Control ===");
+        device = new AC();
+        device.powerOn();
+        device.increaseVolume();
+        device.decreaseVolume();
+        device.powerOff();
+
+        System.out.println("\n=== Speaker Control ===");
+        device = new Speaker();
+        device.powerOn();
+        device.increaseVolume();
+        device.decreaseVolume();
+        device.powerOff();
+    }
+}
+
+ABSTRACT ASSIGNMENT:
+import java.util.*;
+abstract class Media {
+    String title;
+    String creator;
+    int duration;
+    Scanner sc = new Scanner(System.in);
+    abstract void printDetails();   
+}
+class Book extends Media {
+    void printDetails() {
+        System.out.println("Entering Book Details...");
+        System.out.print("Enter Book Title: ");
+        title = sc.nextLine();
+        System.out.print("Enter Author Name: ");
+        creator = sc.nextLine();
+        System.out.print("Enter Number of Pages: ");
+        duration = sc.nextInt();
+        sc.nextLine(); 
+        System.out.println("Book - Title: " + title +
+                ", Author: " + creator +
+                ", Pages: " + duration);
+    }
+}
+class Movie extends Media {
+    void printDetails() {
+        System.out.println("\nEntering Movie Details...");
+        System.out.print("Enter Movie Title: ");
+        title = sc.nextLine();
+        System.out.print("Enter Director Name: ");
+        creator = sc.nextLine();
+        System.out.print("Enter Duration (in minutes): ");
+        duration = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Movie - Title: " + title +
+                ", Director: " + creator +
+                ", Duration: " + duration + " mins");
+    }
+}
+class Song extends Media {
+    void printDetails() {
+        System.out.println("\nEntering Song Details...");
+        System.out.print("Enter Song Title: ");
+        title = sc.nextLine();
+        System.out.print("Enter Singer Name: ");
+        creator = sc.nextLine();
+        System.out.print("Enter Duration (in minutes): ");
+        duration = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Song - Title: " + title +
+                ", Singer: " + creator +
+                ", Duration: " + duration + " mins");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Media m;
+        m = new Book();
+        m.printDetails();
+        m = new Movie();
+        m.printDetails();
+        m = new Song();
+        m.printDetails();
+    }
+}
+
+CONDITIOAL:
+program G:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int k = s.nextInt();
+        System.out.println(k % n);
+    }
+}
+
+program R:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        for (int i = 0; i < a; i++) {
+            int N = s.nextInt();
+            System.out.println(15 * N);
+        }
+    }
+}
+program T:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+        if (N1 > N2) {
+            System.out.println(N1 - N2);
+        } else {
+            System.out.println(N1 + N2);
+        }
+    }
+}
+program S:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int X = s.nextInt();
+        int Y = s.nextInt();
+        int time = (Y / 2) + (X - Y);
+        System.out.println(time);
+    }
+}
+program p:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int i = 0; i < T; i++) {
+            int N = sc.nextInt();
+            int X = sc.nextInt();
+            if (X >= N) {
+                System.out.println(0);
+            } else {
+                int need = N - X;
+                int packets = need / 4;
+                if (need % 4 != 0) {
+                    packets = packets + 1;
+                }
+                System.out.println(packets);
+            }
+        }
+    }
+}
+input:
+4
+20 12
+10 100
+10 9
+20 9
+output:
+2
+0
+1
+3
+//20 12
+//20 - 12 = 8 candies
+//8 / 4 = 2 packets
+//2
+PROGRAM AF;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int perimeter = 2 * (a + b);
+
+        System.out.println(perimeter);
+    }
+}
+input:
+3 4
+Perimeter = 2 × (3 + 4)
+           = 2 × 7
+           = 14
+output:
+14
+PROGRAM C:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        long L = sc.nextLong();
+        long B = sc.nextLong();
+
+        long area = L * B;
+
+        System.out.println(area);
+    }
+}
+input:
+5 8
+output:
+40
+PROGRAM D:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+input:
+4 3 5
+4 + 3 > 5  → 7 > 5 
+4 + 5 > 3  → 9 > 3 
+3 + 5 > 4  → 8 > 4 
+output:
+Yes
+PROGRAM E:
+missing number
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int totalSum = 5050;   // sum of 1 to 100
+        int givenSum = 0;
+        for (int i = 0; i < 99; i++) {
+            givenSum += sc.nextInt();
+        }
+        System.out.println(totalSum - givenSum);
+    }
+}
+PROGRAM F:
+reverse number
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long N = sc.nextLong();
+        long reverse = 0;
+        while (N != 0) {
+            long digit = N % 10;
+            reverse = reverse * 10 + digit;
+            N = N / 10;
+        }
+        System.out.println(reverse);
+    }
+}
+
+problem W
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T > 0) {
+
+            int N = sc.nextInt();
+            long p = 1;
+
+            for (int i = 0; i < N; i++) {
+                int x = sc.nextInt();
+                p = p * x;
+            }
+
+            System.out.println(p);
+            T--;
+        }
+    }
+}
+
+problem 2
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        long sum=0;
+        for(int k=0;k<n;k++){
+            sum+=s.nextInt();
+        }
+     
+         System.out.println(sum);
+    
+    }
+}
 

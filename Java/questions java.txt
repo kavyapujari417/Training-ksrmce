@@ -1,0 +1,211 @@
+1. OBJECT 
+
+1. What is an object?
+
+An object is an instance of a class.
+It is a real-world entity that has state (data) and behavior (methods).
+
+2. What does an object represent?
+
+It represents real-world things like car, student, bank account, etc.
+Each object has its own values.
+
+3. How do you create an object in Java?
+
+Using the new keyword.
+Example:
+Student s = new Student();
+
+4. What does an object contain?
+
+An object contains:
+
+Variables (state/data)
+
+Methods (behavior/functions)
+
+5. Can we create multiple objects from one class?
+
+Yes.
+Each object will have separate data but same structure.
+
+6. Where is memory allocated for an object?
+
+Memory is allocated in heap memory when we use the new keyword.
+
+7. What is object reference?
+
+It is a variable that stores the address of an object in memory.
+Without reference, we cannot access the object.
+
+
+2. CLASS 
+
+
+1. What is a class?
+
+A class is a blueprint or template used to create objects.
+It defines data and methods.
+
+2. Why is class important?
+
+Because it groups related data and functions together.
+It helps in organizing code properly.
+
+3. What are the components of a class?
+
+Variables (fields)
+
+Methods
+
+Constructors
+
+Blocks (optional)
+
+4. Does a class occupy memory?
+
+No.
+Memory is allocated only when an object of that class is created.
+
+5. Can a class have multiple methods?
+
+Yes.
+A class can have many methods depending on requirement.
+
+6. Can we create a class without methods?
+
+Yes.
+But it may not be useful if it does nothing.
+
+7. What is a constructor?
+
+A constructor is a special method used to initialize object values.
+It has the same name as the class and no return type.
+
+
+3. INHERITANCE 
+
+
+1. What is inheritance?
+
+Inheritance is a mechanism where one class acquires properties and methods of another class.
+It promotes code reuse.
+
+2. Which keyword is used for inheritance in Java?
+
+extends
+
+Example:
+class Dog extends Animal
+
+3. What is a parent class?
+
+The class whose properties and methods are inherited.
+Also called superclass.
+
+4. What is a child class?
+
+The class that inherits from another class.
+Also called subclass.
+
+5. Why do we use inheritance?
+
+Code reuse
+
+Reduce duplication
+
+Easy maintenance
+
+Improves performance
+
+6. Does Java support multiple inheritance with classes?
+
+No.
+But it supports multiple inheritance using interfaces.
+
+7. What is multilevel inheritance?
+
+When a class inherits from another class, and that class inherits from another.
+Example: A → B → C
+
+
+4. ABSTRACTION 
+
+
+1. What is abstraction?
+
+Abstraction means hiding internal implementation and showing only important details to the user.
+
+2. Why do we use abstraction?
+
+To reduce complexity
+
+To increase security
+
+To focus only on required functionality
+
+3. How is abstraction achieved in Java?
+
+Abstract class
+
+Interface
+
+4. Can we create object of abstract class?
+
+No.
+Because abstract class may contain incomplete methods.
+
+5. What is an abstract method?
+
+A method without body.
+It must be implemented in child class.
+
+6. Give real-life example of abstraction.
+
+ATM machine – we use it without knowing internal working.
+
+7. What keyword is used for abstract class?
+
+abstract
+
+
+5. ENCAPSULATION
+
+
+1. What is encapsulation?
+
+Encapsulation is wrapping data and methods into a single unit (class) and restricting direct access to data.
+
+2. Why is encapsulation important?
+
+Protects data
+
+Improves security
+
+Makes code maintainable
+
+3. How is encapsulation achieved?
+
+By making variables private and providing public getter and setter methods.
+
+4. What is data hiding?
+
+Data hiding means preventing direct access to variables from outside the class.
+
+5. Which access modifier is used in encapsulation?
+
+private for variables.
+
+6. What are getter methods?
+
+Methods used to return the value of private variables.
+
+Example:
+getName()
+
+7. What are setter methods?
+
+Methods used to update private variable values.
+
+Example:
+setName(String name)
