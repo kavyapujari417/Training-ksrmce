@@ -1,0 +1,41 @@
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #faf7f2;
+  height: 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #8b5e3c;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.cloth ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.cloth li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cloth a {
+  text-decoration: none;
+  color: #3b2f2f;
+  font-size: 16px;
+}
+
+.cloth a:hover {
+  color: #8b5e3c;
+}

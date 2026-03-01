@@ -1,0 +1,12 @@
+.login {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/033/877/566/original/minimal-landing-page-white-wave-with-gold-line-graphic-background-elegant-motion-backdrop-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

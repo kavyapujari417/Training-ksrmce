@@ -1,0 +1,146 @@
+.store {
+  background-image: url("https://img.freepik.com/premium-photo/elegant-background-copy-space_1036998-194957.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 40px;
+}
+.store h2 {
+  color: #3b2f2f;
+  font-size: 32px;
+}
+.store p {
+  color: #3b2f2f;
+  font-size: 17px;
+}
+.store button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.store button:hover {
+  background-color: #6f452a;
+}
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.home-text {
+  width: 50%;
+}
+
+.home-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.second-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.second-section h2 {
+  color: #8b5e3c;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 220px;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.why-section {
+  background-color: #faf7f2;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.why-section h2 {
+  color: #8b5e3c;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.why-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.why-box {
+  background-color: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.why-box h4 {
+  color: #8b5e3c;
+  margin-bottom: 10px;
+}
+
+.why-box p {
+  font-size: 14px;
+  color: #444;
+}
+
+.why-description p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #3b2f2f;
+}
+
+.cta-section {
+  background-color: #c9a66b;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.cta-section p {
+  color: white;
+  margin: 15px 0 25px;
+}

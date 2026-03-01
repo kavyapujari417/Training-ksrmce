@@ -1,0 +1,64 @@
+.back {
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/premium-vector/pink-amaryllis-pattern-background-vector_53876-173776.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #f6efe8;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: black;
+}
+.logo img {
+  height: 70px;
+}
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+.buttons button {
+  padding: 8px 18px;
+  border: none;
+  background-color: white;
+  color: #3a2a00;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 40px;
+}
+.landing-text {
+  width: 55%;
+}
+.landing-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.landing-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.landing-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+.landing-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+}

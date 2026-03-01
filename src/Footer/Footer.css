@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f6efe8;
+  color:black;
+  padding: 50px 30px;
+  text-align: center;
+}
+.footer-content {
+  max-width: 700px;
+  margin: auto;
+}
+.footer h3 {
+  color: #c9a66b;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.footer-contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.8;
+}
