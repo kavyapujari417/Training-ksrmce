@@ -1,0 +1,24 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.contact-form textarea {
+  height: 80px;
+}
+.contact-form button {
+  padding: 8px;
+  cursor: pointer;
+}
